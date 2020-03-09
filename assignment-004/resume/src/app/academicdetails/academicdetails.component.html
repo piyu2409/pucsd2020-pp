@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<div class="container">
+  <u><h2 style="background-color:lightgrey" align="center">Academic Details</h2></u>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="Examination" >
+    <th mat-header-cell *matHeaderCellDef class="head_font"> Examination</th>
+    <td mat-cell class="cell_font" *matCellDef="let element"> {{element.Examination}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="university">
+    <th mat-header-cell *matHeaderCellDef class="head_font" > University </th>
+    <td mat-cell class="cell_font" *matCellDef="let element"> {{element.university}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="institute">
+    <th mat-header-cell *matHeaderCellDef class="head_font">  Institute </th>
+    <td mat-cell class="cell_font" *matCellDef="let element"> {{element.institute}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="passoutyear">
+    <th mat-header-cell *matHeaderCellDef class="head_font"> passout year</th>
+    <td mat-cell class="cell_font" *matCellDef="let element"> {{element.passoutyear}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="cgpa">
+    <th mat-header-cell *matHeaderCellDef class="head_font"> CGPA</th>
+    <td mat-cell class="cell_font" *matCellDef="let element"> {{element.cgpa}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+</div>
+</html>
