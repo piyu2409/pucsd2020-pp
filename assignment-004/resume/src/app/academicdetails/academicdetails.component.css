@@ -1,0 +1,11 @@
+table {
+  width: 100%;
+}
+.head_font{
+	font-size: 20px;
+	font-weight: 700;
+}
+.cell_font{
+	font-size: 18px;
+	font-weight: 500;	
+}
