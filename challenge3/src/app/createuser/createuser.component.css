@@ -1,0 +1,24 @@
+.center {
+ margin: 0 auto;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.row-format{
+	margin-top:30px;
+}
+.example-full-width {
+  width: 100%;
+}
+.text_font{
+	font-size: 20px;
+	padding-top:20px;
+	font-weight:500;
+}
+.form-alignment{
+	/*width: 300px;*/
+	align-content: center;
+    margin: 0 auto;
+}
