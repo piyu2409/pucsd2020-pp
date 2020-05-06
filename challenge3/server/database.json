@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "firstname": "piyu",
+      "lastname": "Mahajan",
+      "email": "piyumahajan24@gmail.com",
+      "password": "g4352",
+      "contactno": "9420958878",
+      "id": 1
+    },
+    {
+      "firstname": "priyanka",
+      "lastname": "Mahajan",
+      "email": "piyu@gmail.com",
+      "password": "1241545",
+      "contactno": "1928734650",
+      "id": 2
+    }
+  ]
+}

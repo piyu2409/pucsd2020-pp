@@ -1,0 +1,18 @@
+[
+	 {
+	"id":1,
+        "firstname": "Priyanka",
+        "lastname": "Mahajan",
+        "email": "piyumahajan@24gmail.com",
+        "password": "priyanka@24",
+	    "contactno":9420958877
+    },
+    {
+	"id":2,
+        "firstname": "Priyanka",
+        "lastname": "Mahajan",
+        "email": "piyumahajan@24gmail.com",
+        "password": "priyanka@24",
+	    "contactno":9420958877
+    }
+]

@@ -1,0 +1,81 @@
+<!-- <div class="container"> -->
+<body style="background-color:#EEECEC ">
+<mat-toolbar color="primary"> 
+<div class="center">UPDATE USER DETAILS</div>
+</mat-toolbar>
+<form class="form-inline my-2 my-lg-0 justify-content-center input-align" [formGroup]="updateForm">
+      <input class="form-control mr-sm-2" #id type="search" placeholder="Search" aria-label="Search" style="margin-left:30px" formControlName="id" required>
+      <button mat-raised-button color="primary" [disabled]="!updateForm.valid" (click)="getById(id.value)"  >Search</button>
+</form>
+<div *ngIf="active == true">
+<form  [formGroup]="updateForm"  >
+<div class="row row-format">
+<div class="col-4"></div>
+<div  class="col-1 text_font" >First Name:</div>
+<div class="col-3">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="first name" formControlName="fnm" maxlength="100" required>
+      </mat-form-field>
+</div>
+<div class="col-4"></div>
+</div>
+<div class="row row-format">
+<div class="col-4">
+</div>
+<div  class="col-1 text_font" >Last Name:</div>
+<div class="col-3">
+     <mat-form-field class="example-full-width">
+      <input matInput placeholder="last name" formControlName="lnm" maxlength="100" required >
+      </mat-form-field>
+</div>
+<div class="col-4"></div>
+</div>
+<div class="row row-format">
+<div class="col-4">
+</div>
+<div  class="col-1 text_font" >Email:</div>
+<div class="col-3">
+  
+      <mat-form-field class="example-full-width">
+      <input  placeholder="Email" matInput formControlName="mail" maxlength="100" required>
+      </mat-form-field>
+    
+</div>
+<div class="col-4"></div>
+</div>
+<div class="row row-format">
+<div class="col-4">
+</div>
+<div  class="col-1 text_font" >Password:</div>
+<div class="col-3">
+  
+      <mat-form-field class="example-full-width">
+      <input matInput placeholder="Password" type="password"  placeholder="Password" formControlName="pwd"
+      required>
+      </mat-form-field>
+    
+</div>
+<div class="col-4"></div>
+</div>
+<div class="row row-format">
+<div class="col-4">
+</div>
+<div  class="col-1 text_font" >Contact No:</div>
+<div class="col-3">
+  
+      <mat-form-field class="example-full-width">
+      <input matInput placeholder="Contact Number" formControlName="cno" maxlength="10" required>
+      </mat-form-field>
+    
+</div>
+<div class="col-4"></div>
+</div>
+<div class="row" style="margin-top:30px">
+  <div class="col-6"></div>
+  <div class="col-6">
+<button mat-raised-button  type="button" color="primary" [disabled]="!updateForm.valid" (click)="onupdate(id.value)">Update</button>
+</div>
+</div>
+</form>
+</div>
+</body>
